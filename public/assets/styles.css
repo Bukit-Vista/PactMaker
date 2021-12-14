@@ -41,6 +41,9 @@ footer {
 .form-row {
   margin-bottom: 2em;
 }
+.form-row-split {
+  display: flex;
+}
 .form-label {
   font-size: 16px;
   font-weight: 500;
