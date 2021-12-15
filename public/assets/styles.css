@@ -38,6 +38,9 @@ footer {
 }
 
 /* Form */
+.form-row-split {
+  display: flex;
+}
 .form-row {
   margin-bottom: 2em;
 }

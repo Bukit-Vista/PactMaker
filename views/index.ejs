@@ -44,7 +44,84 @@
                  oninput="setCustomValidity('')"
                  required>
         </div>
-        <p class="form-comment">PactMaker sends out a copy of the agreement, so be sure to use a real email address.</p>
+        <p class="form-comment">We will send out a copy of the agreement, make sure this is your real email address.</p>
+      </div>
+
+      <div class="form-row-split">
+        <div class="form-row">
+          <div class="form-label">
+            <label for="checkIn">Check in</label>
+          </div>
+          <div class="form-field">
+            <input type="date" id="checkIn" name="checkIn" class="c-input" size="40"
+              value="<%= exampleData.email %>"
+              oninvalid="this.setCustomValidity('Please enter a valid email address.')"
+              oninput="setCustomValidity('')" required disabled>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label">
+            <label for="checkOut">Check out</label>
+          </div>
+          <div class="form-field">
+            <input type="date" id="checkOut" name="checkOut" class="c-input" size="40"
+              value="<%= exampleData.email %>"
+              oninvalid="this.setCustomValidity('Please enter a valid email address.')"
+              oninput="setCustomValidity('')" required disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="propertyName">Property name</label>
+        </div>
+        <div class="form-field">
+          <input type="text" id="propertyName" name="propertyName" class="c-input" size="40" maxlength="100"
+            value="<%= exampleData.name %>" oninvalid="this.setCustomValidity('Please enter your name.')"
+            oninput="setCustomValidity('')" required disabled>
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="company">Security deposit</label>
+        </div>
+        <div class="form-field">
+          <p class="form-comment">We will send out a copy of the agreement, make sure this is your real email address.
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="company">Cancellation policy</label>
+        </div>
+        <div class="form-field">
+          <p class="form-comment">We will send out a copy of the agreement, make sure this is your real email address.
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="company">House rules</label>
+        </div>
+        <div class="form-field">
+          <p class="form-comment">We will send out a copy of the agreement, make sure this is your real email address.
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="company">Damage coverage</label>
+        </div>
+        <div class="form-field">
+          <p class="form-comment">We will send out a copy of the agreement, make sure this is your real email address.
+          </p>
+        </div>
       </div>
 
       <div class="form-row">
