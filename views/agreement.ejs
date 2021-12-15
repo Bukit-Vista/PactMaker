@@ -15,6 +15,7 @@
     font-weight: bold;
   }
   .signature-block {
+    margin-top: 3em;
     margin-bottom: 3em;
   }
   .signature-field {
@@ -45,6 +46,22 @@
     padding: 2px 0 4px;
     margin: 0;
   }
+  .article {
+    margin: 0 0 1em;
+  }
+  .article label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .article p {
+    font-size: 14px;
+    padding: 2px 0 4px;
+    margin: 0;
+  }
+  .details {
+    display: flex;
+  }
 </style>
 </head>
 <body>
@@ -52,9 +69,41 @@
 
   <p>This document was signed by <span class="info"><%= name %></span>.</p>
 
+  <div class="article">
+    <label>Reservation Details</label>
+    <div class="details">
+      <p>Guest name: </p>
+      <p>Check in date: </p>
+      <p>Check out date: </p>
+      <p>Property name: </p>
+    </div>
+</div>
+
+  <div class="article">
+      <label>Security deposit</label>
+      <p>We will send out a copy of the agreement, make sure this is your real email address.</p>
+      <p>We will send out a copy of the agreement, make sure this is your real email address.</p>
+  </div>
+
+  <div class="article">
+      <label>Cancellation policy</label>
+      <p>We will send out a copy of the agreement, make sure this is your real email address.</p>
+  </div>
+
+  <div class="article">
+      <label>House rules</label>
+      <p>We will send out a copy of the agreement, make sure this is your real email address.</p>
+  </div>
+
+  <div class="article">
+      <label>Damage coverage</label>
+      <p>We will send out a copy of the agreement, make sure this is your real email address.</p>
+  </div>
+
   <div class="signature-block">
+    <p><%= date %></p>
     <p class="signature-field"><img src="<%= signature %>" height="55"></p>
-    <p><%= name %><br><%= date %></p>
+    <p><%= name %></p>
   </div>
 
 </body>
