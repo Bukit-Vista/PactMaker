@@ -18,6 +18,7 @@ const emailContentSignee = ejs.compile(fs.readFileSync(`${__dirname}/emails/sign
 const signeeSubject = ejs.compile(process.env.SIGNEE_EMAIL_SUBJECT || '')
 const internalSubject = ejs.compile(process.env.INTERNAL_EMAIL_SUBJECT || '')
 const examples = JSON.parse(fs.readFileSync(`${__dirname}/examples.json`, 'utf8'))
+const formData = require(`${__dirname}/data/formData.js`)
 
 validateConfig()
 
@@ -30,7 +31,7 @@ app.use(express.static('public'))
 
 const viewData = {
   title: process.env.TITLE || '',
-  exampleData: examples
+  exampleData: formData
 }
 
 
