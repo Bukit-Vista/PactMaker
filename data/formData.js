@@ -1,3 +1,5 @@
+// Getting data from API to be signed
+
 function formData(contract_id){
     let data = {
         "name": "Sally Smiths",
@@ -5,16 +7,7 @@ function formData(contract_id){
         "propertyName": "Saws & Sabers Co.",
         "checkIn": "2021-12-01",
         "checkOut": "2021-12-05",
-        "articles": [
-            {
-                "title": "Payment Schedule",
-                "description": "Long text with \n multiple lines"
-            },
-            {
-                "title": "Payment Schedule",
-                "description": "Long text with \n multiple lines"
-            }
-        ]
+        "payment": ""
     };
     return data
 }

@@ -31,7 +31,7 @@ app.use(express.static('public'))
 
 const viewData = {
   title: process.env.TITLE || '',
-  exampleData: formData
+  formData: formData
 }
 
 
@@ -64,7 +64,7 @@ app.post('/sign', (req, res) => {
  */
 app.get('/example.pdf', (req, res) => {
   const template = ejs.compile(agreement)
-  const data = viewData.exampleData
+  const data = viewData.formData
   data.date = moment().format('MMMM Do, YYYY')
 
   createDocument(template(data), (pdf) => {

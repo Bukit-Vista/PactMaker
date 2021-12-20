@@ -16,13 +16,14 @@
           <label for="name">Full name</label>
         </div>
         <div class="form-field">
-          <input type="text"
+          <p class="form-comment"><%= formData.name %></p>
+          <input type="hidden"
                  id="name"
                  name="name"
                  class="c-input"
                  size="40"
                  maxlength="100"
-                 value="<%= exampleData.name %>"
+                 value="<%= formData.name %>"
                  oninvalid="this.setCustomValidity('Please enter your name.')"
                  oninput="setCustomValidity('')"
                  required>
@@ -34,12 +35,13 @@
           <label for="email">Email address</label>
         </div>
         <div class="form-field">
-          <input type="email"
+          <p class="form-comment"><%= formData.email %></p>
+          <input type="hidden"
                  id="email"
                  name="email"
                  class="c-input"
                  size="40"
-                 value="<%= exampleData.email %>"
+                 value="<%= formData.email %>"
                  oninvalid="this.setCustomValidity('Please enter a valid email address.')"
                  oninput="setCustomValidity('')"
                  required>
@@ -53,10 +55,11 @@
             <label for="checkIn">Check in</label>
           </div>
           <div class="form-field">
-            <input type="date" id="checkIn" name="checkIn" class="c-input" size="40"
-              value="<%= exampleData.checkIn %>"
+            <p class="form-comment"><%= formData.checkIn %></p>
+            <input type="hidden" id="checkIn" name="checkIn" class="c-input" size="40"
+              value="<%= formData.checkIn %>"
               oninvalid="this.setCustomValidity('Please enter a valid email address.')"
-              oninput="setCustomValidity('')" required disabled>
+              oninput="setCustomValidity('')" required >
           </div>
         </div>
         <div class="form-row">
@@ -64,10 +67,11 @@
             <label for="checkOut">Check out</label>
           </div>
           <div class="form-field">
-            <input type="date" id="checkOut" name="checkOut" class="c-input" size="40"
-              value="<%= exampleData.checkOut %>"
+            <p class="form-comment"><%= formData.checkOut %></p>
+            <input type="hidden" id="checkOut" name="checkOut" class="c-input" size="40"
+              value="<%= formData.checkOut %>"
               oninvalid="this.setCustomValidity('Please enter a valid email address.')"
-              oninput="setCustomValidity('')" required disabled>
+              oninput="setCustomValidity('')" required >
           </div>
         </div>
       </div>
@@ -77,9 +81,10 @@
           <label for="propertyName">Property name</label>
         </div>
         <div class="form-field">
-          <input type="text" id="propertyName" name="propertyName" class="c-input" size="40" maxlength="100"
-            value="<%= exampleData.propertyName %>" oninvalid="this.setCustomValidity('Please enter your name.')"
-            oninput="setCustomValidity('')" required disabled>
+          <p class="form-comment"><%= formData.propertyName %></p>
+          <input type="hidden" id="propertyName" name="propertyName" class="c-input" size="40" maxlength="100"
+            value="<%= formData.propertyName %>" oninvalid="this.setCustomValidity('Please enter your name.')"
+            oninput="setCustomValidity('')" required >
         </div>
       </div>
 
